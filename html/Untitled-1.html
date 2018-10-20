@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Homework</title>
+    <style type="text/css">
+
+    p{text-align:center;
+        font-size:70px;
+        padding-top:20px;
+        font-family:"Microsoft Yahei";
+        font-weight:555;
+        font-style:italic;
+    }
+    a{text-decoration:none;}
+    </style>
+</head>
+<body><script type="text/javascript">
+         
+    var i=0;
+    setInterval('changeColor()',777);//控制颜色转换速度
+        function changeColor(){
+            var div=document.getElementById('character'); //获得div元素
+            var colorArr=['#F60','#F09','#60F','#09F','#0F6','#9F0']; //建立颜色库
+            if(i==colorArr.length){ 
+                    i=0;
+                }else{
+                    div.style.color=colorArr[i++%colorArr.length]; //循环颜色
+                }
+            }
+</script>
+  <a href="http://img.mukewang.com/54ffac56000169c001840181.jpg" title ="点击偷瞄BKA学姐";> <p class="title" id="character">Hello World!</p></a>
+</body>
+</html>
